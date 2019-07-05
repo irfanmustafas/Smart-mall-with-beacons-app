@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="pgmall.beacon_mall.activites.ActivitySplash">
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_new" />
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        style="@android:style/Animation.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:progress="25" />
+
+</RelativeLayout>

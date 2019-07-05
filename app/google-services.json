@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "124302892884",
+    "firebase_url": "https://radwa-eaa97.firebaseio.com",
+    "project_id": "radwa-eaa97",
+    "storage_bucket": "radwa-eaa97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124302892884:android:4f748bcfa8c62dfb",
+        "android_client_info": {
+          "package_name": "allam9072.mall_4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124302892884-9qjbdbf8edu6asg0qjt2jdafog208nq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "allam9072.mall_4",
+            "certificate_hash": "98722e9561d66326c183ae1e926ba027f72c3ad3"
+          }
+        },
+        {
+          "client_id": "124302892884-mo3ks94kl8i4r32ald9rrlk3brh0obg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "allam9072.mall_4",
+            "certificate_hash": "7e96e004bb97308b036f4d6138f94d9712367003"
+          }
+        },
+        {
+          "client_id": "124302892884-0s2melb0vfc9gkvn87jfnvffd725gjnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoOpSeEzyqUFD7td2Cve7NXtj-uH22hRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124302892884-0s2melb0vfc9gkvn87jfnvffd725gjnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124302892884:android:5a0ca50dc4a2db0d",
+        "android_client_info": {
+          "package_name": "com.example.radwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124302892884-b80rif9gu49c50c5u5ruojpb3mnk93r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.radwa",
+            "certificate_hash": "7e96e004bb97308b036f4d6138f94d9712367003"
+          }
+        },
+        {
+          "client_id": "124302892884-0s2melb0vfc9gkvn87jfnvffd725gjnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoOpSeEzyqUFD7td2Cve7NXtj-uH22hRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124302892884-0s2melb0vfc9gkvn87jfnvffd725gjnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

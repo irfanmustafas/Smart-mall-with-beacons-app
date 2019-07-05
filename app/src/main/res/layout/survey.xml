@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="What Is Your Gender ?"
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="male"
+
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="How Many Times Do you visit Mall ?"
+
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Replay In Nmbers"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="25dp"
+                android:text="How Old Are You?"
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="12 - 15"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="15 - 20"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text=" 20 - 30 "
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="more than 30"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="What reasons did you have to visit today? "
+
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kill time"
+                    android:textColor="@color/buttn"
+
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Needed to eat"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Buy food and drink"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Buy a gift"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="About how much did you spend per person for food and drink?"
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nothing"
+                    android:textColor="@color/buttn"
+
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Less than $2.50"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text=" $2.50 - $10.00"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="more than $10.00"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Why did you eat at the mall today?"
+
+                android:textColor="@color/buttn"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kill time"
+
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Needed to eat"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text=" Buy food and drink"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="Buy a gift"
+                    android:textColor="@color/buttn"
+                    android:textSize="10sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

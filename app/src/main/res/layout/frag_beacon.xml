@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="373.5dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTintMode="src_atop"
+        android:src="@drawable/beacon_new"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="          Beacon Feature "
+        android:textColor="@color/buttn"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="           Turn on bluetooth and find  \n
+               your location on map "
+        android:textColor="@color/buttn"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="30dp"
+        />
+    <Button
+        android:id="@+id/beacons_button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttn"
+        android:fontFamily="sans-serif"
+        android:text="serach for beacons"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+       />
+</LinearLayout>

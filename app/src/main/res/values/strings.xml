@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Beacons Mall</string>
+    <string name="menu_home">menu_home</string>
+    <string name="menu_search">menu_search</string>
+    <string name="menu_map">menu_map</string>
+    <string name="menu_favorite">menu_favorite</string>
+    <string name="menu_profile">menu_profile</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="home">home</string>
+    <string name="search">search</string>
+    <string name="map">map</string>
+    <string name="favorite">favorite</string>
+    <string name="profile">profile</string>
+</resources>

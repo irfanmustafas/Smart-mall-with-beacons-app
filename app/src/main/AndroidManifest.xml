@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pgmall.mall_4">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/beaconicon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="pgmall.beacon_mall.activites.AboutUs"></activity>
+        <activity android:name="pgmall.beacon_mall.activites.AboutMall" />
+        <activity android:name="pgmall.beacon_mall.activites.Survey_activity" />
+        <activity android:name="pgmall.beacon_mall.activites.shopActivity" />
+        <activity android:name="pgmall.beacon_mall.MainActivity" />
+        <activity android:name="pgmall.beacon_mall.map_view.MapViewer" />
+        <activity android:name="pgmall.beacon_mall.map_view.Map2Viewer" />
+        <activity android:name="pgmall.beacon_mall.map_view.Map3Viewer" />
+        <activity android:name="pgmall.beacon_mall.activites.GalleryActivity" />
+        <activity android:name="pgmall.beacon_mall.show_data" />
+        <activity android:name="pgmall.beacon_mall.activites.SearchNEW" />
+        <activity android:name="pgmall.beacon_mall.activites.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

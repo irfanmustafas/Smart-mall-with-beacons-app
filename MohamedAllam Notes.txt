@@ -1,0 +1,4 @@
+25 Apr 2019
+
+every item in home activity go to its aim activity with DATA 
+ALL IN ____text only item_____
