@@ -10,7 +10,7 @@ Fragments
 Material Design objects 
 Firebase Database 
 Firebase Storage 
-using anther App as Administrator for this App  
+using anther App as Administrator for this App  https://github.com/mohamedAllam9072/admin_smart_mall
 Admin app features :
 upload texts and Images and using Firebase Authentication 
 can edit data add new item , delete and update 
