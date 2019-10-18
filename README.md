@@ -4,13 +4,14 @@ indoor locating technology not free and GPS can detect your location outside suh
 detect where you are inside the building  here our project twist detect location with high accuracy techniques and low in prices  so that
 using estimote beacons https://estimote.com  Bluetooth devices using in locating 
 and using android in development 
-android features :
-Recyclerview 
-Fragments 
-Material Design objects 
-Firebase Database 
-Firebase Storage 
-using anther App as Administrator for this App  https://github.com/mohamedAllam9072/admin_smart_mall
+## android features :
+# Recyclerview 
+# Fragments 
+# Material Design objects 
+# Firebase Database 
+# Firebase Storage 
+using anther
+## App as Administrator for this App  https://github.com/mohamedAllam9072/admin_smart_mall
 Admin app features :
 upload texts and Images and using Firebase Authentication 
 can edit data add new item , delete and update 
