@@ -9,12 +9,11 @@ detect where you are inside the building  here our project twist detect location
 ## Material Design objects 
 ## Firebase Database 
 ## Firebase Storage ,...
-using anther
 ## App as Administrator for this App  https://github.com/mohamedAllam9072/admin_smart_mall
 Admin app features :
 upload texts and Images and using Firebase Authentication 
 can edit data add new item , delete and update 
-# Machine Learning part:
+### Machine Learning part:
 using user data and shops visited before and provide shops related to his previous visit and data analysis provide reports to admin to make decisions 
 #### Project Presentation :https://drive.google.com/file/d/14PFHTQa8XjKHob-k6ljZlYPAacT4LNR1/view?usp=sharing 
 and I'm developing android part
