@@ -18,7 +18,7 @@ public class MapViewer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.webview);
+        setContentView(R.layout.webview_map);
         Intent intent = getIntent();
         String ID = intent.getStringExtra("Value1");
      //   String place = ID;

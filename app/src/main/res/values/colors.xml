@@ -3,12 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="startblue">#09c6df</color>
-    <color name="endblue">#09ccef</color>
-
+    <color name="start_blue">#09c6df</color>
+    <color name="end_blue">#09ccef</color>
     <color name="back">#E8E8E8</color>
-    <color name="buttn">#3a4144</color>
-    <color name="graylight">#fafafa</color>
+    <color name="button">#3a4144</color>
+    <color name="gray_light">#fafafa</color>
     <color name="address">#2F7092</color>
     <color name="followers">#0D5D98</color>
     <color name="headings">#3797CF</color>
@@ -16,9 +15,8 @@
     <color name="circleBorder">#50FFFFFF</color>
     <color name="gradEnd">#67EFC8</color>
     <color name="gradStart">#63C9FF</color>
-    <color name="mapbg">#84B262</color>
-    <color name="beaconbg">#E85653</color>
+    <color name="map_bg">#84B262</color>
+    <color name="beacon_bg">#E85653</color>
     <color name="grey">#E5E5E5</color>
-
     <color name="white">#FFFFFF</color>
 </resources>

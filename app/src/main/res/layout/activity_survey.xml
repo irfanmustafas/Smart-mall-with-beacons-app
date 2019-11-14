@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:text="What Is Your Gender ?"
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:text="male"
 
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:text="female"
 
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
             </RadioGroup>
 
@@ -66,7 +66,7 @@
                 android:layout_height="25dp"
                 android:text="How Many Times Do you visit Mall ?"
 
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
 
                 android:layout_height="25dp"
                 android:text="How Old Are You?"
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -105,7 +105,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="12 - 15"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -113,7 +113,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="15 - 20"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -121,7 +121,7 @@
 
                     android:layout_height="wrap_content"
                     android:text=" 20 - 30 "
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -129,7 +129,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="more than 30"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
             </RadioGroup>
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:layout_height="25dp"
                 android:text="What reasons did you have to visit today? "
 
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Kill time"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
 
                     android:textSize="10sp" />
 
@@ -170,7 +170,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="Needed to eat"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -184,7 +184,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="Buy a gift"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
             </RadioGroup>
 
@@ -206,7 +206,7 @@
 
                 android:layout_height="wrap_content"
                 android:text="About how much did you spend per person for food and drink?"
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -218,7 +218,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Nothing"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
 
                     android:textSize="10sp" />
 
@@ -227,7 +227,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="Less than $2.50"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -235,7 +235,7 @@
 
                     android:layout_height="wrap_content"
                     android:text=" $2.50 - $10.00"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -243,7 +243,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="more than $10.00"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
             </RadioGroup>
 
@@ -265,7 +265,7 @@
                 android:layout_height="25dp"
                 android:text="Why did you eat at the mall today?"
 
-                android:textColor="@color/buttn"
+                android:textColor="@color/button"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -278,7 +278,7 @@
                     android:layout_height="wrap_content"
                     android:text="Kill time"
 
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -286,7 +286,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="Needed to eat"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -294,7 +294,7 @@
 
                     android:layout_height="wrap_content"
                     android:text=" Buy food and drink"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
 
                 <RadioButton
@@ -302,7 +302,7 @@
 
                     android:layout_height="wrap_content"
                     android:text="Buy a gift"
-                    android:textColor="@color/buttn"
+                    android:textColor="@color/button"
                     android:textSize="10sp" />
             </RadioGroup>
 

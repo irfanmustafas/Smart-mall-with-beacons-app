@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import pgmall.mall_4.R;
 
-public class AboutMall extends AppCompatActivity {
+public class activity_aboutMall extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

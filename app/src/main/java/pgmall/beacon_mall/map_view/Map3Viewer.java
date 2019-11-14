@@ -20,7 +20,7 @@ public class Map3Viewer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.webview);
+        setContentView(R.layout.webview_map);
         webView = (WebView) findViewById(R.id.nyc_poi_webview);
         webView.setWebViewClient(new WebViewClient());
         Intent i = getIntent();

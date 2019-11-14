@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import pgmall.mall_4.R;
 
-public class Survey_activity extends AppCompatActivity {
+public class activity_survey extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.survey);
+        setContentView(R.layout.activity_survey);
     }
 }

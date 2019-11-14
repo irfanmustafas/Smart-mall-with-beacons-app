@@ -6,12 +6,10 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import pgmall.beacon_mall.MainActivity;
 import pgmall.mall_4.R;
 
 
-public class ActivitySplash extends AppCompatActivity {
-    private static int SPLASH_TIME = 1500; //This is 3 seconds
+public class activity_splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +17,12 @@ public class ActivitySplash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         //Code to start timer and take action after the timer ends
+        //This is 3 seconds
+        int SPLASH_TIME = 1500;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mySuperIntent = new Intent(ActivitySplash.this, MainActivity.class);
+                Intent mySuperIntent = new Intent(activity_splash.this, MainActivity.class);
                 startActivity(mySuperIntent);
                 finish();
             }

@@ -13,29 +13,30 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/beacon13"
         android:label="@string/app_name"
         android:roundIcon="@drawable/beaconicon1"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="pgmall.beacon_mall.activites.AboutUs"></activity>
-        <activity android:name="pgmall.beacon_mall.activites.AboutMall" />
-        <activity android:name="pgmall.beacon_mall.activites.Survey_activity" />
-        <activity android:name="pgmall.beacon_mall.activites.shopActivity" />
-        <activity android:name="pgmall.beacon_mall.MainActivity" />
+        <activity android:name="pgmall.beacon_mall.activites.activity_aboutUs"></activity>
+        <activity android:name="pgmall.beacon_mall.activites.activity_aboutMall" />
+        <activity android:name="pgmall.beacon_mall.activites.activity_survey" />
+        <activity android:name="pgmall.beacon_mall.activites.activity_shopProfile" />
+        <activity android:name="pgmall.beacon_mall.activites.MainActivity" />
         <activity android:name="pgmall.beacon_mall.map_view.MapViewer" />
         <activity android:name="pgmall.beacon_mall.map_view.Map2Viewer" />
         <activity android:name="pgmall.beacon_mall.map_view.Map3Viewer" />
-        <activity android:name="pgmall.beacon_mall.activites.GalleryActivity" />
-        <activity android:name="pgmall.beacon_mall.show_data" />
-        <activity android:name="pgmall.beacon_mall.activites.SearchNEW" />
-        <activity android:name="pgmall.beacon_mall.activites.ActivitySplash">
+        <activity android:name="pgmall.beacon_mall.activites.activity_gallery" />
+        <activity android:name="pgmall.beacon_mall.activites.activity_shopsList" />
+        <activity android:name="pgmall.beacon_mall.activites.activity_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

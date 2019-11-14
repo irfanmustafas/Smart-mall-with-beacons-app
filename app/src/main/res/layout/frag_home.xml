@@ -4,22 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fragHome_viewPager_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_margin="@dimen/value_8dp"
+            android:background="@color/white" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fragHome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/value_8dp"
+            android:layout_weight="1"
+            android:background="@color/white">
 
+        </androidx.recyclerview.widget.RecyclerView>
 
-
-    <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/pager1"
-        android:layout_width="wrap_content"
-        android:layout_height="144dp" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/frag_home_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_alignParentStart="true"
-        android:layout_weight="1">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-</LinearLayout>
+    </LinearLayout>

@@ -1,10 +1,10 @@
 package pgmall.beacon_mall.fragments;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,113 +12,98 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
-import pgmall.beacon_mall.activites.SearchNEW;
+import java.util.ArrayList;
+
+import pgmall.beacon_mall.adapters.adapter_search;
 import pgmall.beacon_mall.modules.DataModule;
 import pgmall.mall_4.R;
 
 public class frag_search extends Fragment {
-    private EditText mSearchField;
-    private ImageButton mSearchBtn;
+    private View view;
+    private RecyclerView recyclerView;
+    private ArrayList<DataModule> arrayList;
+    private pgmall.beacon_mall.adapters.adapter_search adapter_search;
 
-    private RecyclerView mResultList;
-
-    private DatabaseReference mUserDatabase;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.search_frag, container, false);
-        mUserDatabase = FirebaseDatabase.getInstance().getReference("root").child("cinema");
-        mSearchField = (EditText) view.findViewById(R.id.search_field);
-        mSearchBtn = (ImageButton) view.findViewById(R.id.search_btn);
-        mResultList = (RecyclerView) view.findViewById(R.id.result_list);
-        mResultList.setHasFixedSize(true);
-        mResultList.setLayoutManager(new LinearLayoutManager(getContext()));
-        mSearchBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                String searchText = mSearchField.getText().toString();
-
-                firebaseUserSearch(searchText);
-            }
-        });
-//        mRecyclerView = view.findViewById( R.id.frag_search_list_view );
-//        mRecyclerView.setLayoutManager( new LinearLayoutManager(this.getActivity()) );
-//        mRecyclerView.setAdapter( new LinearAdapter(text,images ) );
-
-
-
-
+        view = inflater.inflate(R.layout.frag_search, container, false);
+        setRecyclerView();
+        setSearchView();
+        getAllDataBase();
         return view;
     }
 
-    private void firebaseUserSearch(String searchText) {
+    private void setRecyclerView() {
+        recyclerView = view.findViewById(R.id.rv_frag_search);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        arrayList = new ArrayList<>();
+    }
 
-        Toast.makeText(getContext(), "Started Search", Toast.LENGTH_LONG).show();
-
-        Query firebaseSearchQuery = mUserDatabase.orderByChild("name").startAt(searchText).endAt(searchText + "\uf8ff");
-
-        FirebaseRecyclerAdapter<DataModule, SearchNEW.UsersViewHolder> firebaseRecyclerAdapter
-                = new FirebaseRecyclerAdapter<DataModule, SearchNEW.UsersViewHolder>(
-
-                DataModule.class,
-                R.layout.list_layout,
-                SearchNEW.UsersViewHolder.class,
-                firebaseSearchQuery
-
-        ) {
+    private void setSearchView() {
+        SearchView searchView = view.findViewById(R.id.search_view_frag_Search);
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchView.setQueryHint("search");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
-            protected void populateViewHolder(SearchNEW.UsersViewHolder viewHolder, DataModule dataModule, int position) {
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
 
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter_search.getFilter().filter(newText);
+                return false;
+            }
+        });
 
-                viewHolder.setDetails(getContext(), dataModule.getName(), dataModule.getPhone(), dataModule.getUri());
+    }
 
+    private void getDatabase(String choosesPart) {
+        DatabaseReference mUserDatabase = FirebaseDatabase.getInstance().getReference("root").child(choosesPart);
+        mUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    DataModule module = snapshot.getValue(DataModule.class);
+                    arrayList.add(module);
+                }
+                adapter_search = new adapter_search(getContext(), arrayList);
+                recyclerView.setAdapter(adapter_search);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(getContext(), databaseError.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
-        };
+        });
+    }
 
-        mResultList.setAdapter(firebaseRecyclerAdapter);
-
+    private void getAllDataBase() {
+        final String s0, s1, s2, s3, s4, s5;
+        s0 = "cinema";
+        s1 = "dinning";
+        s2 = "entertainment";
+        s3 = "fashion";
+        s4 = "optics";
+        s5 = "sportwear";
+        getDatabase(s0);
+        getDatabase(s1);
+        getDatabase(s2);
+        getDatabase(s3);
+        getDatabase(s4);
+        getDatabase(s5);
     }
 
 
-    // View Holder Class
-
-    public static class UsersViewHolder extends RecyclerView.ViewHolder {
-
-        View mView;
-
-        public UsersViewHolder(View itemView) {
-            super(itemView);
-
-            mView = itemView;
-
-        }
-
-        public void setDetails(Context ctx, String userName, String userStatus, String userImage) {
-
-            TextView user_name =  mView.findViewById(R.id.name_text);
-           // TextView user_status = mView.findViewById(R.id.status_text);
-            ImageView user_image =  mView.findViewById(R.id.profile_image);
-
-            user_name.setText(userName);
-          //  user_status.setText(userStatus);
-
-            Glide.with(ctx).load(userImage).into(user_image);
-
-
-        }
-    }
 }

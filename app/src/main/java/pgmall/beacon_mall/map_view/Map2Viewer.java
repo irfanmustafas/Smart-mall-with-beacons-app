@@ -19,7 +19,7 @@ public class Map2Viewer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.webview);
+        setContentView(R.layout.webview_map);
         webView = (WebView) findViewById(R.id.nyc_poi_webview);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://maps.mapwize.io/#/v/city_mall_map?k=yoRLjct74YZZxkij&venueId=5ccddd390cd5de0016d20628&organizationId=5ccc92770cd5de0016d1e393");

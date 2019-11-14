@@ -60,19 +60,12 @@ public class frag_beacon extends Fragment {
 
         // map = view.findViewById(R.id.map_button);
         beacons = view.findViewById(R.id.beacons_button);
-       // int size = dataModule-List.size();
+        // int size = dataModule-List.size();
         reference = FirebaseDatabase.getInstance().getReference("root");
         String searchText = "zara";
         final Intent i = new Intent(getActivity(), MapViewer.class);
 
         dataModuleList = new ArrayList<>();
-
-
-
-
-
-
-
 
 
         beacons.setOnClickListener(new View.OnClickListener() {
@@ -90,10 +83,8 @@ public class frag_beacon extends Fragment {
 
     public void Beacons_ON() {
 
-        EstimoteCloudCredentials cloudCredentials =
-                new EstimoteCloudCredentials("mallapp-6sx", "602e0f8ebbcf652e22b4eb701281f0e2");
-
-
+        EstimoteCloudCredentials cloudCredentials
+                = new EstimoteCloudCredentials("mallapp-6sx", "602e0f8ebbcf652e22b4eb701281f0e2");
         // 2. Create the Proximity Observer
         this.proximityObserver =
                 new ProximityObserverBuilder(getContext(), cloudCredentials)
@@ -114,7 +105,7 @@ public class frag_beacon extends Fragment {
                     @Override
                     public Unit invoke(ProximityZoneContext context) {
                         String beacon_id = context.getDeviceId();
-                        String b1 = beacon_id ;
+                        String b1 = beacon_id;
                         //     beacons.setText(" " + beacon_id);
                         i.putExtra("Value1", b1);
                         startActivity(i);
@@ -179,11 +170,11 @@ public class frag_beacon extends Fragment {
             for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                 DataModule module = snapshot.getValue(DataModule.class);
                 dataModuleList.add(module);
-                Toast.makeText(getActivity(),module.getMap_id(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), module.getMap_id(), Toast.LENGTH_LONG).show();
 
             }
 
-    }
+        }
 
         @Override
         public void onCancelled(@NonNull DatabaseError databaseError) {

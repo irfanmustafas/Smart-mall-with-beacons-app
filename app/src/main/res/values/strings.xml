@@ -13,4 +13,20 @@
     <string name="map">map</string>
     <string name="favorite">favorite</string>
     <string name="profile">profile</string>
+    <string name="beacons_feature">Beacons Feature</string>
+    <string name="fragBeacons_String_2">Turn on bluetooth and find your location on map</string>
+    <string name="search_for_beacons">search for beacons</string>
+    <string name="todo">TODO</string>
+    <string name="never_get_lost">Never get lost</string>
+    <string name="go_to_mall_map_to_see_all_the_stores">Go to Mall Map to see all the stores</string>
+    <string name="go_to_the_map">go to the map</string>
+    <string name="search2">Search</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="category">Category</string>
+    <string name="email">Email</string>
+    <string name="joey_sharenofood_com">joey@sharenofood.com</string>
+    <string name="phone">Phone</string>
+    <string name="website">WebSite</string>
+    <string name="description">description</string>
+    <string name="gallery">Gallery</string>
 </resources>

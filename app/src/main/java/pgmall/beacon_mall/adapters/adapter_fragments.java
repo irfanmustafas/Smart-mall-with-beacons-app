@@ -1,10 +1,11 @@
 package pgmall.beacon_mall.adapters;
 
 
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import org.jetbrains.annotations.NotNull;
 
 import pgmall.beacon_mall.fragments.frag_beacon;
 import pgmall.beacon_mall.fragments.frag_home;
@@ -12,11 +13,12 @@ import pgmall.beacon_mall.fragments.frag_map;
 import pgmall.beacon_mall.fragments.frag_search;
 import pgmall.beacon_mall.fragments.frag_setting;
 
-public class fragment_adapter extends FragmentPagerAdapter {
-    public fragment_adapter(FragmentManager fm) {
+public class adapter_fragments extends FragmentPagerAdapter {
+    public adapter_fragments(FragmentManager fm) {
         super(fm);
     }
 
+    @NotNull
     @Override
     public Fragment getItem(int i) {
         switch (i) {
@@ -40,10 +42,4 @@ public class fragment_adapter extends FragmentPagerAdapter {
         return 5;
     }
 
-
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return null;
-    }
 }
